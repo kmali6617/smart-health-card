@@ -1,0 +1,288 @@
+/* =================================================
+
+Template Name:  Mouri - Personal Responsive Bootstrap Template
+Author: MouriThemes
+Version: 1.0
+Design and Developed by: Manash Kanti Sarker
+
+NB: This is the responsive stylesheet of this theme.
+
+=================================================== */
+
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+
+    /* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .section-padding {
+        padding: 35px 0;
+    }
+
+    .navbar-nav {
+        margin: 15px 0;
+    }
+
+    .navbar-brand {
+        padding: 20px 0;
+    }
+
+    .navbar-nav > li > a {
+        line-height: 0;
+    }
+
+    .nav > li > a {
+        padding: 10px 8px;
+    }
+
+    .text-affect, .typed-cursor {
+        font-size: 4.5em;
+    }
+
+    .mouse-icon {
+        bottom: -320px;
+    }
+
+    .about-text p {
+        line-height: 1.7em;
+    }
+
+    .single-services {
+        margin-bottom: 30px;
+    }
+
+    .portfolio-area nav ul li {
+        padding: 5px 15px;
+        margin-left: 5px;
+    }
+
+    .testimonial-content p {
+        font-size: 16px;
+    }
+
+    .contact-area {
+        background-position: inherit;
+    }
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+    .section-padding {
+        padding: 30px 0;
+    }
+
+    .navbar-toggle .icon-bar {
+        background: #3498DB;
+    }
+
+    .navbar-nav {
+        float: right;
+        margin: 11px 21px;
+        margin-right: 32%;
+        display: inherit;
+        width: 200px;
+        background-color: transparent;
+    }
+
+    .navbar-nav li {
+        float: left;
+        margin: 9px 50px;
+        display: inherit;
+        width: 100%;
+    }
+
+    .navbar-fixed-top .navbar-collapse {
+        height: 740px;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .navbar-fixed-top .navbar-collapse {
+        max-height: 100%;
+    }
+
+    .sticky_navigation .nav li a {
+        color: #ffffff;
+    }
+
+    .mouse-icon {
+        bottom: -125px;
+    }
+
+    .text-affect, .typed-cursor {
+        font-size: 2em;
+    }
+
+    .welcome-text h2 {
+        font-size: 2em;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .banner-btn a {
+        padding: 7px 20px;
+        letter-spacing: 0;
+    }
+
+    p.heading-text {
+        font-size: 15px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    .socials {
+        margin-bottom: 20px;
+    }
+
+    .btn.btn-primary::before {
+        display: none;
+    }
+
+    .about-area .btn.btn-primary{
+        border-color: #3498DB;
+    }
+
+    .about-area .btn-group .btn {
+        padding: 15px 0;
+        font-size: 15px;
+    }
+
+    .about-area .tab-content > .tab-pane {
+        padding: 30px 10px;
+    }
+
+    .proPic img {
+        margin-bottom: 15px;
+    }
+
+    .single-services {
+        margin-bottom: 30px;
+    }
+
+    .portfolio-area ul{
+        text-align: center;
+    }
+
+    .portfolio-area ul.list-inline li {
+        margin: 5px;
+    }
+
+    .portfolio-area ul.list-inline li:first-child {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+
+    .portfolio-area ul.list-inline li:last-child {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+
+    .portfolio-area nav ul li {
+        padding: 5px 21px;
+    }
+
+    .portfolio-area .list-inline > li {
+        padding-right: 0px;
+    }
+
+    .single-testimonial {
+        margin: 0px 0px 30px 0px;
+    }
+
+    .testimonial-heading {
+        margin-bottom: 40px;
+    }
+
+    .testimonial-content p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .contact-area .form-control {
+        font-size: 11px;
+    }
+
+    .contact-area {
+        background-position: inherit;
+    }
+
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .text-affect, .typed-cursor {
+        font-size: 2.5em;
+    }
+
+    .single-portfolio img {
+        width: 100%;
+    }
+
+    .navbar-toggle .icon-bar {
+        background: #3498DB;
+    }
+
+    .mouse-icon {
+        bottom: -300px;
+    }
+
+    .portfolio-area .list-inline > li {
+        padding-right: 0px;
+    }
+
+    .contact-area {
+         background-position: inherit;
+     }
+}
+
+
+@media only screen and (min-width: 360px) and (max-width: 767px){
+    .text-affect, .typed-cursor {
+        font-size: 2.5em;
+    }
+
+    .addressLeft span{
+        display:inline-block;
+    }
+
+    .portfolio-area ul.list-inline li {
+        margin: 7px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px){
+    .text-affect, .typed-cursor {
+        font-size: 2.5em;
+    }
+
+    .portfolio-area .list-inline > li {
+        padding-right: 0px;
+    }
+
+    .portfolio-area ul.list-inline li {
+        margin: 7px;
+    }
+}
+
+
+@media screen and (min-width: 600px){
+    .text-affect, .typed-cursor {
+        font-size: 4em;
+    }
+
+    .single-portfolio {
+        text-align: center;
+    }
+    .proPic img {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}
+
+

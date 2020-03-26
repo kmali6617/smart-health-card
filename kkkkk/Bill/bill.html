@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V15</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		
+
+		<div class="wrap-contact100">
+			<div class="contact100-form-title" style="background-image: url(images/bg-01.jpg);">
+				<span class="contact100-form-title-1">
+					Bill Registration
+				</span>
+
+				<!--span class="contact100-form-title-2">
+				Feel free to drop us a line below!
+			</!..span-->
+			</div>
+
+			<form class="contact100-form validate-form" action="bill.php" method="POST ">
+
+
+				<div class="wrap-input100 validate-input" data-validate="Bill no. is required">
+					<span class="label-input100">Bill Number:</span>
+					<input class="input100" type="text" name="billno" placeholder="Enter Bill Number">
+					<span class="focus-input100"></span>
+				</div>
+
+				<!--<div class="wrap-input100 validate-input" data-validate="Date is required">
+		<span class="label-input100">Registration Date:</span>
+		<input class="input100" type="text" name="regno" placeholder="Enter Registration Date">
+		<span class="focus-input100"></span>
+	</div>-->
+
+				<div class="wrap-input100 validate-input" data-validate="Patient id is required">
+					<span class="label-input100">Patient Id:</span>
+					<input class="input100" type="text" name="patid" placeholder="Enter Patient Id ">
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Disease Type">
+					<span class="label-input100">Disease Type:</span>
+					<input class="input100" type="text" name="disease" placeholder="Enter the type of disease">
+					<span class="focus-input100"></span>
+				</div>
+
+
+				<div class="wrap-input100 validate-input" data-validate="Medicine Charge">
+					<span class="label-input100">Medicine Charge:</span>
+					<input class="input100" type="text" name="medchr" placeholder="Enter Medicine Charge">
+				</div>
+
+
+
+				<div class="wrap-input100 validate-input" data-validate="Lab Charge">
+					<span class="label-input100">Lab Charge:</span>
+					<input class="input100" type="text" name="labchr" placeholder="Lab Charge">
+					<span class="focus-input100"></span>
+				</div>
+
+				
+				<!-- <div class="wrap-input100 validate-input" data-validate="Gender is required">
+					<span class="label-input100">Gender:</span>
+					<!--<input class="input100" type="text" name="gender" placeholder="Enter Gender">
+		<span class="focus-input100"></span>-->
+
+					<!-- <input type="radio" id="male" name="gender" value="male">
+					<label for="male">Male</label>
+					<input type="radio" id="female" name="gender" value="female">
+					<label for="female">Female</label>
+					<input type="radio" id="other" name="gender" value="other">
+					<label for="other">Other</label>
+				</div>
+ --> 
+
+				<!--<div class="wrap-input100 validate-input" data-validate="Birthdate is required">
+		<span class="label-input100">Birthdate:</span>
+		<input class="input100" type="text" name="bdate" placeholder="Enter Birthdate">
+		<span class="focus-input100"></span>
+	</div>-->
+
+
+				<div class="wrap-input100 validate-input" data-validate="Doctor Charge">
+					<span class="label-input100">Doctor Charge:</span>
+					<input class="input100" type="text" name="docch" placeholder="Doctor Charge">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Nursing Charge">
+					<span class="label-input100">Nursing Charge:</span>
+					<input class="input100" type="text" name="skills" placeholder="Nursing Charge">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Room Charge">
+					<span class="label-input100">Room Charge:</span>
+					<input class="input100" type="text" name="roomchr" placeholder="Room Charge">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Operation Charge">
+					<span class="label-input100">Operation Charge:</span>
+					<input class="input100" type="text" name="opchr" placeholder="Operation Charge">
+					
+					<!-- <select id="state" onchange="ChangeStateList()"> 
+  								<option value="s0">----Select State----</option> 
+  								<option value="andhrapradesh">Andhra Pradesh</option> 
+  								<option value="arunachalpradesh">Arunachal Pradesh</option> 
+  								<option value="assam">Assam</option>
+  								<option value="bihar">Bihar</option>
+  								<option value="chhattisgarh">Chhattisgarh</option>
+  								<option value="delhi">Delhi</option>
+  								<option value="goa">Goa</option>
+  								<option value="gujarat">Gujarat</option>
+  								<option value="haryana">Haryana</option>
+  								<option value="himachalpradesh">Himachal Pradesh</option>
+  								<option value="jammuandkashmir">Jammu and Kashmir</option>
+  								<option value="jharkhand">Jharkhand</option>
+  								<option value="karnataka">Karnataka</option>
+								  <option value="kerala">Kerala</option>
+								  <option value="madhyapradesh">Madhya Pradesh</option>
+								  <option value="maharashtra">Maharashtra</option>
+								  <option value="manipur">Manipur</option>
+								  <option value="meghalaya">Meghalaya</option>
+								  <option value="mizoram">Mizoram</option>
+								  <option value="nagaland">Nagaland</option>
+								  <option value="odisha">Odisha</option>
+								  <option value="punjab">Punjab</option>
+								  <option value="rajasthan">Rajasthan</option>
+								  <option value="sikkim">Sikkim</option>
+								  <option value="tamilnadu">Tamil Nadu</option>
+								  <option value="telangana">Telangana</option>
+								  <option value="tripura">Tripura</option>
+								  <option value="uttarpradesh">Uttar Pradesh</option>
+								  <option value="westbengal">West Bengal</option>
+					    </select> -->
+					
+					<span class="focus-input100"></span>
+				</div>
+				
+				 <div class="wrap-input100 validate-input" data-validate="City is required">
+					<span class="label-input100">City:</span>
+					<input class="input100" type="text" name="city" placeholder="Enter city">
+					<span class="focus-input100"></span>
+				</div>
+
+				<!-- <div class="wrap-input100 validate-input" data-validate="Country is required">
+					<span class="label-input100">Country:</span>
+					<input class="input100" type="text" name="country" placeholder="Enter Country">
+					<span class="focus-input100"></span>
+				</div>
+ -->
+				<!-- <div class="wrap-input100 validate-input" data-validate="Experience is required">
+					<span class="label-input100">Experience:</span>
+					<input class="input100" type="text" name="expreience" placeholder="Enter Experience ">
+					<span class="focus-input100"></span>
+				</div> -->
+
+				<!-- <div class="wrap-input100 validate-input" data-validate="Certificate is required">
+					<span class="label-input100">Certificate:</span>
+					<span for="myfile">Select a file:</span>
+					<input class="input100" id="myfile" type="file" name="myfile">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Hospital Name is required">
+					<span class="label-input100">Hospital Name:</span>
+					<input class="input100" type="text" name="hospitalname" placeholder="Enter Hospital Name ">
+					<span class="focus-input100"></span>
+				</div> -->
+
+				<!-- <div class="wrap-input100 validate-input" data-validate="Category is required">
+					<span class="label-input100">Category:</span>
+					<input class="input100" type="text" name="catogery" placeholder="Enter Category ">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Rejoin Date is required">
+					<span class="label-input100">Rejoin Date:</span>
+					<!--<label for="rejoindate">Rejoin Date:</label>-->
+<!-- 					<input class="input100" type="date" name="rejointdate" id="rejointdate">
+					<span class="focus-input100"></span>
+
+				</div> --> 
+				<!-- <div class="wrap-input100 validate-input" data-validate="Join Date is required">
+					<span class="label-input100">Join Date:</span>
+					<!--<label for="rejoindate">Rejoin Date:</label>-->
+					<!-- <input class="input100" type="date" name="joindate" id="joindate">
+					<span class="focus-input100"></span> -->
+
+				<!-- </div>
+				<div class="wrap-input100 validate-input" data-validate="Suspend Date is required">
+					<span class="label-input100">Suspend Date :</span>
+					<!--<label for="rejoindate">Rejoin Date:</label>-->
+					<!-- <input class="input100" type="date" name="suspanddate" id="suspanddate">
+					<span class="focus-input100"></span>
+
+				</div> -->  
+
+				<div class="wrap-input100 validate-input" data-validate="Advance Payment">
+					<span class="label-input100">Advance Payment:</span>
+					<!--<label for="rejoindate">Objective:</label>-->
+					<input class="input100" type="text" name="advpay" placeholder="Advance Payment ">
+					<span class="focus-input100"></span>
+
+				</div> 
+ 
+				<!-- <div class="wrap-input100 validate-input" data-validate="Enter Objective">
+					<span class="label-input100">Objective:</span>
+					<label for="rejoindate">Objective:</label>
+					<input class="input100" type="text" name="objective" placeholder="Enter Objectives ">
+					<span class="focus-input100"></span>
+
+				</div>  -->
+				<!--<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+		<span class="label-input100">Email:</span>
+		<input class="input100" type="text" name="email" placeholder="Enter email addess">
+		<span class="focus-input100"></span>
+	</div>
+
+	<div class="wrap-input100 validate-input" data-validate="Phone is required">
+		<span class="label-input100">Phone:</span>
+		<input class="input100" type="text" name="phone" placeholder="Enter phone number">
+		<span class="focus-input100"></span>
+	</div>
+
+	<div class="wrap-input100 validate-input" data-validate="Message is required">
+		<span class="label-input100">Message:</span>
+		<textarea class="input100" name="message" placeholder="Your Comment..."></textarea>
+		<span class="focus-input100"></span>
+	</div>-->
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						<span>
+							Submit
+							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+	</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+	<script src="js/map-custom.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Patient Registration</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css2/util.css">
+	<link rel="stylesheet" type="text/css" href="css2/main.css">
+<!--===============================================================================================-->
+<style>
+	
+</style>
+</head>
+<body class="body">
+
+
+	<div class="container-contact100" style=" background: #5dc4e9;
+	background: -webkit-linear-gradient(-135deg, #51a1d6, #86d8f1);
+  background: -o-linear-gradient(-135deg, #559ef1, #86d8f1);
+  background: -moz-linear-gradient(-135deg, #559ef1, #86d8f1);
+  background: linear-gradient(-135deg, #559ef1, #86d8f1);">
+		
+
+		<div class="wrap-contact100">
+			<div class="contact100-form-title" style="background-image: url(images/bg-01.jpg);">
+				<span class="contact100-form-title-1">
+					Patient Registration
+				</span>
+
+				<!--span class="contact100-form-title-2">
+					Feel free to drop us a line below!
+				</!..span-->
+			</div>
+
+			<form class="contact100-form validate-form" action="PatientRegp.php" method="POST">
+
+
+				<div class="wrap-input100 validate-input" data-validate="Registration Number is required">
+					<span class="label-input100">Registration Number:</span>
+					<input class="input100" type="number" name="patientid" placeholder="Enter Registration Number">
+					<span class="focus-input100"></span>
+				</div>
+
+				
+
+				<div class="wrap-input100 validate-input" data-validate="First Name is required">
+					<span class="label-input100">First Name:</span>
+					<input class="input100" type="text" name="pfname" placeholder="First Name">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Least Name is required">
+					<span class="label-input100">Leasst Name:-</span>
+					<input class="input100" type="text" name="plname" placeholder="Least Name">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Password">
+					<span class="label-input100">Password:-</span>
+					<input class="input100" type="Password" name="password" placeholder="Password">
+					<span class="focus-input100"></span>
+				</div>
+
+
+
+				<div class="wrap-input100 validate-input" data-validate="Address is required">
+					<span class="label-input100">Address:-</span>
+					
+					<textarea class="input100" name="address" placeholder="Enter Address"> </textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Country is required">
+					<span class="label-input100">Country:-</span>
+					<input class="input100" type="text" name="country" placeholder="Enter Country">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="City is required">
+					<span class="label-input100">City:-</span>
+					<input class="input100" type="text" name="city" placeholder="Enter City">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Phone is required">
+					<span class="label-input100">Phone:-</span>
+					<input class="input100" type="text" name="phone" placeholder="Enter phone number">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+					<span class="label-input100">Email:-</span>
+					<input class="input100" type="text" name="email" placeholder="Enter email addess">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Blood Group is required">
+					<span class="label-input100">Blood Group:-</span>
+					<select name="bloodgroup" id="Blood Group">
+                                            <option value="b_1">A+</option>
+                                            <option value="b_1">A-</option>
+                                            <option value="b_1">B+</option>
+                                            <option value="b_1">B-</option>
+                                            <option value="b_1">O+</option>
+                                            <option value="b_1">O-</option>
+                                            <option value="b_1">AB+</option>
+                                            <option value="b_1">AB-</option>
+                                        </select>
+					<span class="focus-input100"></span>
+				</div>
+
+			<br>
+			<br>
+	
+
+				<div class="wrap-input100 validate-input" data-validate="Gender is required">
+					<span class="label-input100">Gender:</span>
+					
+
+							<div class="form-radio-group">            
+                                        <div class="form-radio-item">
+                                            <input type="radio" name="gender" id="male" value="male" checked>
+                                            <label for="male">Male</label>
+                                            <span class="check"></span>
+                                        
+                                        
+                                            <input type="radio" name="gender" id="female" value="female">
+                                            <label for="female">Female</label>
+                                            <span class="check"></span>
+                                       
+                                            <input type="radio" name="gender" id="other" value="other">
+                                            <label for="other">Other</label>
+                                            <span class="check"></span>
+                                       	</div>
+                                    </div>
+
+					<span class="focus-input100"></span>
+				</div>
+
+
+
+				<div class="wrap-input100 validate-input" data-validate="Birthdate is required">
+					<span class="label-input100">Birthdate:</span>
+					<!--<label for="rejoindate">Rejoin Date:</label>-->
+					<input class="input100" type="date" name="birthdate" id="Birthdate">
+					<span class="focus-input100"></span>
+
+				</div>
+
+
+
+
+				<div class="wrap-input100 validate-input" data-validate="Emergency Name is required">
+					<span class="label-input100">Emergency Name:-</span>
+					<input class="input100" type="text" name="emergency_name" placeholder="Emergency Name">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Emergency Contact Name is required">
+					<span class="label-input100">Emergency Contact No:</span>
+					<input class="input100" type="text" name="emergency_no" placeholder="Enter Emergency Contact Name">
+					<span class="focus-input100"></span>
+				</div>
+
+
+				<div class="wrap-input100 validate-input" data-validate="Allergies is required">
+					<span class="label-input100">Allergies:</span>
+					<input class="input100" type="text" name="allergy" placeholder="Enter Allergies">
+					<span class="focus-input100"></span>
+				</div>
+
+				
+
+
+				<!-- <div class="wrap-input100 validate-input" data-validate="Message is required">
+					<span class="label-input100">Message:</span>
+					<textarea class="input100" name="message" placeholder="Your Comment..."></textarea>
+					<span class="focus-input100"></span>
+				</div> -->
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						<span>
+						<b>	Submit </b>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================	-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+	<script src="js/map-custom.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+
+</body>
+</html>

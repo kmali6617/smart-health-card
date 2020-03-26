@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Prescription</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="form.css" >
+        <script src="form.js"></script>
+
+        <script src="jquery.js"></script> 
+            <script> 
+            $(function(){
+            $("#includedContent").load("data.html"); 
+            });
+    </script>
+
+    </head>
+    <body>
+        <div id="includedContent"></div>
+        <div class="container">
+            <div class="container-box">
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Prescription</button>
+            </div>
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">
+                                Prescription
+                                <a href="login.html">Login</a>
+
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <form role="form" method="post" id="reused_form" action="prescription.php">
+                                 <div class="form-group">ADMISSION DETAILS </div>
+                                
+                                <div class="form-group">
+                                    <label for="name"> Doctor ID:</label>
+                                    <input type="text" class="form-control" id="doctorid" name="doctorid" required maxlength="50">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="name"> Patient ID:</label>
+                                    <input type="text" class="form-control" id="Patinetid" name="Patinetid" required maxlength="50">
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="name"> Patient Name:</label>
+                                    <input type="text" class="form-control" id="Patientname" name="Patientname" required maxlength="50">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="name">State</label>
+                                    <input type="text" class="form-control" id="State" name="State" required maxlength="50">
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="name">City</label>
+                                    <input type="text" class="form-control" id="City" name="City" required maxlength="50">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="name">Accident:-</label>
+                                    <input type="radio"  name="gender" value="Yes">Yes
+                                    <input type="radio"  name="gender" value="No">No
+                                    
+                                </div>
+
+
+
+                                <div class="form-group">
+                                        <label for="name">Disease Type</label>
+                                        <select name="Diseasetype" id="Diseasetype">
+                                            <option value="b_1">Autoimmune Diseases.</option>
+                                            <option value="b_1">Allergies & Asthma.</option>
+                                            <option value="b_1">Cancer</option>
+                                            <option value="b_1">Crohn's & Colitis</option>
+                                            <option value="b_1">Celiac Disease</option>
+                                            <option value="b_1">Heart Disease</option>
+                                            <option value="b_1">Infectious Diseases</option>
+                                            <option value="b_1">Liver Disease</option>
+                                        </select>
+                    
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="name">Disease Descryption</label>
+                                    <textarea class="form-control" type="textarea" name="descryption" id="descryption" placeholder="Enter Descryption Here" maxlength="6000" rows="3"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="name">Fees</label>
+                                    <input type="text" class="form-control" name="Fees">
+                                </div>
+                                
+                               
+
+
+
+                                
+
+                                
+
+                                <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">Submit</button>
+                            </form>
+                            <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
+                            <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+

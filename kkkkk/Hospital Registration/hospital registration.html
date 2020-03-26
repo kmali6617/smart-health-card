@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Hospital Registration</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		
+
+		<div class="wrap-contact100">
+			<div class="contact100-form-title" style="background-image: url(images/bg-01.jpg);">
+				<span class="contact100-form-title-1">
+					Hospital Registration Details
+				</span>
+
+				<span class="contact100-form-title-2">
+					Feel free to write a specific details of your hospital!
+				</span>
+			</div>
+
+			<form class="contact100-form validate-form" action="hospital.php" method="POST">
+				<div class="wrap-input100 validate-input" data-validate="Hospital Id is required">
+					<span class="label-input100">Hospital Id:</span>
+					<input class="input100" type="text" name="HospitalId" placeholder="Enter valid hospital id">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Hospital name is required : ex@abc.xyz">
+					<span class="label-input100">Hospital Name:</span>
+					<input class="input100" type="text" name="HospitalName" placeholder="Enter hospital name">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Password is required">
+					<span class="label-input100">Password:</span>
+					<input class="input100" type="text" name="Password" placeholder="Enter password">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Email id is required">
+					<span class="label-input100">Email Id:</span>
+					<input class="input100" type="text" name="EmailId" placeholder="Enter email id of your hospital">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Address is required">
+					<span class="label-input100">Address:</span>
+					<input class="input100" type="text" name="Address" placeholder="Enter address of your hospital">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="City is required">
+					<span class="label-input100">City:</span>
+					<input class="input100" type="text" name="CityName" placeholder="Enter city of your hospital" list="CityName">
+					<datalist id="CityName">
+						<option value="Anand">Anand</option>
+						<option value="Surat">Surat</option>
+						<option value="Vadodara">Vadodara</option>
+						<option value="Ahmedabad">Ahmedabad</option>
+					</datalist>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="State is required">
+					<span class="label-input100">State:</span>
+					<input class="input100" type="text" name="StateName" placeholder="Enter a state" list="StateName">
+					<datalist id="StateName">
+						<option value="Gujarat">Gujarat</option>
+						<option value="Maharashtra">Maharashtra</option>
+						<option value="Madhya Pradesh">Madhya Pradesh</option>
+						<option value="Goa">Goa</option>
+					</datalist>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Country is required">
+					<span class="label-input100">Country:</span>
+					<input class="input100" type="text" name="CountryName" placeholder="Enter a country" list="CountryName">
+					<datalist id="CountryName">
+						<option value="India">India</option>
+						<option value="USA">USA</option>
+						<option value="Canada">Canada</option>
+						<option value="Australia">Australia</option>
+					</datalist>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Contact No is required">
+					<span class="label-input100">Contact No:</span>
+					<input class="input100" type="text" name="ContactNo" placeholder="Enter contact no of your hospital">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Hospital Category is required">
+					<span class="label-input100">Hospital Category:</span>
+					<input class="input100" type="text" name="HospitalCategory" placeholder="Enter a category of your hospital (Ex.Heart,Eye,etc..)">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Website is required">
+					<span class="label-input100">Website:</span>
+					<input class="input100" type="text" name="Website" placeholder="Enter a website of your hospital (Ex.www.abc.com)">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="License No is required">
+					<span class="label-input100">License No:</span>
+					<input class="input100" type="text" name="LicenseNo" placeholder="Enter license no of your hospital">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="License pdf is required">
+					<span class="label-input100">License Pdf:</span>
+					<input class="input100" type="text" name="LicensePdf" placeholder="Enter pdf format of your hospital license">
+					<input type="file" name="fileupload" value="fileupload" id="fileupload"> <label for="fileupload"> Select a file to upload</label> 
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						<span>
+							Submit
+						</span>
+					</button>
+
+					<button class="contact100-form-btn">
+						<span>
+							Log In
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+	<script src="js/map-custom.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+
+</body>
+</html>
